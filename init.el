@@ -1,25 +1,7 @@
-(install-packs '(exec-path-from-shell
-                 ;; some playtime with graphviz
+(install-packs '(;; some playtime with graphviz
                  graphviz-dot-mode
                  fold-dwim
                  htmlize))
-
-;; setup the path
-(require 'exec-path-from-shell)
-(exec-path-from-shell-initialize)
-
-;; some text/font/color tweaks
-
-(setq-default fill-column 120)
-(set-face-background 'default "black")
-
-(set-language-environment "UTF-8")
-(blink-cursor-mode 1)
-
-;; C-x C-l to lower case ; C-x C-u to upper case
-
-(put 'downcase-region 'disabled nil)
-(put 'upcase-region 'disabled nil)
 
 ;; To dynamically extend emacs via macros
 
