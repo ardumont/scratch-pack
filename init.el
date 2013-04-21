@@ -1,4 +1,12 @@
-(install-packs '(exec-path-from-shell))
+(install-packs '(exec-path-from-shell
+                 ;; some playtime with graphviz
+                 graphviz-dot-mode
+                 fold-dwim
+                 htmlize
+                 ;; to help in editing textarea in chrome
+                 edit-server
+                 ;; to display puppet file
+                 puppet-mode))
 
 ;; User pack init file
 ;;
