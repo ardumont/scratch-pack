@@ -1,6 +1,5 @@
 (install-packs '(;; some playtime with graphviz
                  graphviz-dot-mode
-                 fold-dwim
                  htmlize))
 
 ;; To dynamically extend emacs via macros
