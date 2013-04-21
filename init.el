@@ -4,9 +4,7 @@
                  fold-dwim
                  htmlize
                  ;; to help in editing textarea in chrome
-                 edit-server
-                 ;; to display puppet file
-                 puppet-mode))
+                 edit-server))
 
 ;; User pack init file
 ;;
@@ -27,10 +25,6 @@
 
 (set-language-environment "UTF-8")
 (blink-cursor-mode 1)
-
-;; puppet-mode for the .pp file
-
-(add-to-list 'auto-mode-alist '("\.pp$" . puppet-mode))
 
 ;; C-x C-l to lower case ; C-x C-u to upper case
 
