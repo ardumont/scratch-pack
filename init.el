@@ -2,17 +2,7 @@
                  ;; some playtime with graphviz
                  graphviz-dot-mode
                  fold-dwim
-                 htmlize
-                 ;; to help in editing textarea in chrome
-                 edit-server))
-
-;; User pack init file
-;;
-;; User this file to initiate the pack configuration.
-;; See README for more information.
-
-;; my init.el snippets of code transformed brutally into a emacs-live live pack
-;; (from emacs-live's init.el)
+                 htmlize))
 
 ;; setup the path
 (require 'exec-path-from-shell)
@@ -47,13 +37,6 @@
 
 ;; Load bindings config
 (live-load-config-file "bindings.el")
-
-;; edit-server
-(if (and (daemonp) (locate-library "edit-server"))
-     (progn
-       (require 'edit-server)
-       (setq edit-server-new-frame nil)
-       (edit-server-start)))
 
 ;; Must-have setup for Emacs to operate like a modern application.
 (setq
