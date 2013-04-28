@@ -8,5 +8,5 @@ A simple emacs-live pack to arrange some things I do not know where to put yet.
 in your .emacs-live.el, add this:
 
 ```el
-(live-add-packs '(scratch-pack))
+(live-add-packs '("/path/to/scratch-pack"))
 ```
