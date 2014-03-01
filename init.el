@@ -8,4 +8,3 @@
 ;; delay before displaying the help message
 (setq ac-quick-help-delay 0.3)
 
-(live-load-config-file "bindings.el")
