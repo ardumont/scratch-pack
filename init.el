@@ -7,9 +7,16 @@
 (install-packs '(;; some playtime with graphviz
                  graphviz-dot-mode
                  htmlize
-                 auto-complete))
+                 auto-complete
+                 cyberpunk-theme
+                 solarized-theme))
 
 (require 'auto-complete)
+
+;; (disable-them 'zenburn)
+;; (load-theme 'zenburn t)
+;; (load-theme 'solarized-dark t)
+(load-theme 'cyberpunk t)
 
 ;; delay before displaying the help message
 (setq ac-quick-help-delay 0.3)
