@@ -1,4 +1,4 @@
-;;; install-packages-pack.el --- Install routine
+;;; scratch-pack.el --- A pack to tinker
 
 ;;; Commentary:
 
@@ -13,4 +13,4 @@
 ;; delay before displaying the help message
 (setq ac-quick-help-delay 0.3)
 
-;;; install-packages-pack.el ends here
+;;; scratch-pack.el ends here
