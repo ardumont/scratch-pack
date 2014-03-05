@@ -22,4 +22,25 @@
 
 (guide-key-mode 1)                             ;; Enable guide-key-mode
 
+(require 'graphviz-dot-mode)
+
+(add-hook 'graphviz-dot-mode-hook
+          (lambda ()
+            (define-key graphviz-dot-mode-map "\C-cv")
+            (define-key graphviz-dot-mode-map "\C-cp")
+            (define-key graphviz-dot-mode-map "\C-cc")
+
+            ;; (define-key graphviz-dot-mode-map "\r"       'electric-graphviz-dot-terminate-line)
+            ;; (define-key graphviz-dot-mode-map "{"        'electric-graphviz-dot-open-brace)
+            ;; (define-key graphviz-dot-mode-map "}"        'electric-graphviz-dot-close-brace)
+            ;; (define-key graphviz-dot-mode-map ";"        'electric-graphviz-dot-semi)
+            ;; (define-key graphviz-dot-mode-map "\M-\t"    'graphviz-dot-complete-word)
+            ;; (define-key graphviz-dot-mode-map "\C-\M-q"  'graphviz-dot-indent-graph)
+            (define-key graphviz-dot-mode-map (kbd "C-c G p") 'graphviz-dot-preview)
+            (define-key graphviz-dot-mode-map (kbd "C-c G c") 'compile)
+            (define-key graphviz-dot-mode-map (kbd "C-c G v") 'graphviz-dot-view)
+            ;; (define-key graphviz-dot-mode-map "\C-c\C-c" 'comment-region)
+            ;; (define-key graphviz-dot-mode-map "\C-c\C-u" 'graphviz-dot-uncomment-region)
+            ))
+
 ;;; scratch-pack.el ends here
