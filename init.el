@@ -26,9 +26,9 @@
 
 (add-hook 'graphviz-dot-mode-hook
           (lambda ()
-            (define-key graphviz-dot-mode-map "\C-cv")
-            (define-key graphviz-dot-mode-map "\C-cp")
-            (define-key graphviz-dot-mode-map "\C-cc")
+            (define-key graphviz-dot-mode-map "\C-cv" nil)
+            (define-key graphviz-dot-mode-map "\C-cp" nil)
+            (define-key graphviz-dot-mode-map "\C-cc" nil)
 
             ;; (define-key graphviz-dot-mode-map "\r"       'electric-graphviz-dot-terminate-line)
             ;; (define-key graphviz-dot-mode-map "{"        'electric-graphviz-dot-open-brace)
