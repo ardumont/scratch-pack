@@ -15,7 +15,7 @@
 (setq ac-quick-help-delay 0.3)
 
 (require 'guide-key)
-(setq guide-key/idle-delay 0.5)                ;; Delay in seconds before guide
+(setq guide-key/idle-delay 0.8)                ;; Delay in seconds before guide
                                                ;; buffer is displayed.
 (setq guide-key/guide-key-sequence '("C-c"))   ;; key sequence to learn
 (setq guide-key/recursive-key-sequence-flag t)
