@@ -4,6 +4,7 @@
 
 ;;; Code:
 
+(require 'install-packages-pack)
 (install-packs '(graphviz-dot-mode
                  htmlize
                  auto-complete))
@@ -35,4 +36,5 @@
             (define-key graphviz-dot-mode-map (kbd "C-c G C-c") 'comment-region)
             (define-key graphviz-dot-mode-map (kbd "C-c G C-u") 'graphviz-dot-uncomment-region)))
 
+(provide 'scratch-pack)
 ;;; scratch-pack.el ends here
