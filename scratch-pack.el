@@ -6,13 +6,7 @@
 
 (require 'install-packages-pack)
 (install-packs '(graphviz-dot-mode
-                 htmlize
-                 auto-complete))
-
-(require 'auto-complete)
-
-;; delay before displaying the help message
-(setq ac-quick-help-delay 0.3)
+                 htmlize))
 
 (require 'graphviz-dot-mode)
 
