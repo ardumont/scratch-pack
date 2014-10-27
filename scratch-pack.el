@@ -5,8 +5,8 @@
 ;;; Code:
 
 (require 'install-packages-pack)
-(install-packs '(graphviz-dot-mode
-                 htmlize))
+(install-packages-pack/install-packs '(graphviz-dot-mode
+                                       htmlize))
 
 (require 'graphviz-dot-mode)
 
