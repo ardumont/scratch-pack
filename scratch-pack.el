@@ -6,7 +6,8 @@
 
 (require 'install-packages-pack)
 (install-packages-pack/install-packs '(graphviz-dot-mode
-                                       htmlize))
+                                       htmlize
+                                       google-this))
 
 (require 'graphviz-dot-mode)
 
