@@ -4,10 +4,8 @@
 
 ;;; Code:
 
-(require 'install-packages-pack)
-(install-packages-pack/install-packs '(htmlize
-                                       google-this))
-
+(use-package htmlize)
+(use-package google-this)
 
 (provide 'scratch-pack)
 ;;; scratch-pack.el ends here
